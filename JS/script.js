@@ -271,3 +271,21 @@ function checkEqual(a, b) {
     return (a == b) ? "Equal" : "Not Equal";
   }
   checkEqual(1, 2);
+
+//   111. Use Multiple Conditional (Ternary) Operators
+function checkSign(num) {
+    return (num == 0) ? "zero" : (num > 0) ? "positive" : "negative";
+}
+checkSign(10);
+
+// 112. 
+function countdown(n){
+    return n < 1 ? [] : [n].concat(countdown(n - 1));
+ }
+
+// 113. Use Recursion to Create a Range of Numbers
+function rangeOfNumbers(startNum, endNum) {
+    return (endNum < startNum)
+      ? []
+      : rangeOfNumbers(startNum, endNum - 1).concat(endNum);
+  };
